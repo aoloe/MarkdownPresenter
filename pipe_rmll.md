@@ -3,6 +3,9 @@ TODO:
 - by the way, the pipe is the first memory i have of the lgm (picture of kiberpipa): a t-shirt i've met at the hostel in lyon and that i've found amazing! but i still haven't managed to buy one...
 - martin sayz: the xclip can manage formatting
 - another guy says: have a look at jack (libjack)
+
+
+mention
 -->
 ![ceci n'est pas une pipe](image/pas_pipe.jpg)
 
@@ -10,19 +13,19 @@ Ale Rimoldi | ale@graphicslab.org
 
 <!---
 
-Hi. My name is Ale Rimoldi and I'm a Scribus developer.
+Hi. My name is Ale Rimoldi and I'm a Scribus developer -- a Desktop publishing tool -- and one of the organizers of the Libre Graphics Meeting, a yearly get together of the users and develoeprs for the free software for graphics.
 
-For those who only have read the title of this talk and wonder about what kind of pipe I'm about to be talking: it's about integrating "small" tools with something similar to the Unix pipe.
+This talk will be about integrating "small" tools for graphics with something similar to the Unix pipe.
 
-Around the end of 2012, I took a break from my Scribus activities, and I've been thinking about what is the future of publishing and what we – as free software creators – can provide.
+Around the end of 2012, I took a break from my Scribus activities, and I've been thinking about the world of publishing is evolving and how we – as free software creators – can help the people achieve their goals.
 
-One of the topics that I've focused on: what about creating a zoo of small tools, each solving a specific task, instead of one big monolitic program.
+One of the topics that I've been focusng on is: what about creating a zoo of small tools, each solving a specific task, instead of one big monolitic program.
 
 -->
 
 !
 
-![cramped complex apps](image/epub.jpg)
+![liquid layout](image/epub.jpg)
 
 Exact measurements → Liquid layout
 
@@ -53,7 +56,7 @@ Most people don't seem to really mind.
 But they are comfortable with phones, tablets...
 
 <!---
-But, at the same time, people are getting used to Apps that do only one task. On their phones, on their tablet
+But, at the same time, people are getting used to Apps that do only one task. Mostly with a clean, minimalistic interface. On their phones, on their tablet...
 
 -->
 
@@ -61,10 +64,10 @@ But, at the same time, people are getting used to Apps that do only one task. On
 
 ![a flash app](image/phraseit.png)
 
-... and Flash apps.
+... and in lot of Flash apps.
 
 <!--
-... and on the Web
+... and on the Web where lots of Flash apps -- but also more and more HTML5 ones -- are making the internet fun to use.
 -->
 
 !
@@ -75,7 +78,19 @@ Each App being an isoleted island.
 
 <!---
 
-But all those applications live in their own world and can't talk to each other. Here comes the idea to create small apps with a pipe between them...
+But each one of those applications live in its own world and can't talk to the other ones. Lots of isolated islands, not really what I was looking for. But still inspiring: it made me think about creating small apps with a pipe between them...
+
+-->
+
+!
+
+![stupid](image/stupid.jpg)
+
+Well, me I'm just a stupid user...
+
+<!---
+
+This morning at the hostel I've been trying to explain what I was doing to a musician and teacher. After some time his answer whas been: "Well, me I'm just a stupid user and I don't really understand more than what I need to type some text". One thing is sure: he is not stupid! I'm pretty sure that it's his computer that makes him feel stupid. The proof is in the fact that he admits that he feels comfortable with phone and tablet Apps that each do one single step in a complex interaction with his tool. 
 
 -->
 
@@ -87,9 +102,9 @@ Est-ce que ceci est la |?
 
 <!--
 
-As you already know, the inspiration is coming from the Unix pipe.
+As I've said at the beginning of this talk, I've been inspired is coming from the Unix pipe.
 
-The unix pipe is a sort of command, that can be put between between the name of two programs and will result in the output for the first program, being piped into the second program, which will do what it's needed.
+For those who don't know about it, the unix pipe is a sort of command, that can be put between between the name of two programs and will result in the output for the first program, being piped into the second program, which will do what it's needed.
 -->
 
 !
@@ -106,8 +121,8 @@ The unix pipe is a sort of command, that can be put between between the name of 
     ale  25829 Apr 10 22:50 mikado.png
 
 <!--
-The Unix pipe is a very powerfull tool, that in a rather simple way, make programs communicate. The only condition being, that each program can read text as input and can output text as a result of the process.
-But already this rather simple example, shows the limits of the pipe: the size is sorted by it's alphabetic order, not the numeric one: so 20040 comes before 2374. Not that I doubt that there is a way to get it done with a simple pipe! But you can guess that with more complex graphical data, the complexity can very fast become unmanegeable.
+The Unix pipe is a very powerfull tool, that in a rather simple way, make programs communicate. The basic principle being, that each program can read text as input and can output text as a result of the process.
+But already this rather simple example, shows the limits of the pipe: I've tried to list the files in the current directoy and get them sorted by size -- well, without using the built-in option -- the size is sorted by it's alphabetic order, not the numeric one: so 20040 comes before 2374. Not that I doubt that there is a way to get it done with the pipe and a few more tools or options! But you can guess that with more complex data, as example graphical ones, the complexity can very fast become unmanegeable.
 -->
 
 !
@@ -118,7 +133,7 @@ Terminology: a graphical terminal
 
 <!---
 Let's take inspiration from what is already around...
-Not only has Enlightenment surprised us with a release after 12 years of development, but they are also giving us a terminal with multimedia capabilities...
+Not only has Enlightenment surprised us with a release after 12 years of development, but they are also working on giving us a terminal with multimedia capabilities...
 -->
 
 !
@@ -129,6 +144,8 @@ A GUI inspired by node based editors?
 
 <!---
 Still, the terminal feels very old. It's Very effective for many tasks, but I'm sure that we can found alternative ways to use a pipe.
+
+There is a node based photo editor that is in its starting blocs (and should have been presented here) and -- if I look at it -- it much closer to what I imagine a Pipe for graphics should look like
 -->
 
 !
@@ -241,13 +258,11 @@ Back to the Epub exporter. In Scribus, every bit is geared towards defining posi
 
 ![html / css](image/osp_html_css.jpg)
 
-/me too, likes HTML and CSS.
+/me likes HTML and CSS.
 
 <!---
 
-I join the OSP crew and also thank Claudia and Manuel. Not only for their talks here at the LGM, but also for the discussions we had through the year!. And I will certnialy follow with lot of interest the OSP trials and errors around HTML and CSS!
-
-And who knows, maybe we will even find a role for Scribus in a world where dedicated tools are getting piped together!
+Here in Brussels, we have OSP -- Open source publishing -- an artiste collective, and they announced at the last LGM in Madrid that they will be go for some trials and error in producing their PDFs with HTML and CSS. It's worth to be followed!
 
 -->
 
@@ -260,5 +275,4 @@ Ale Rimoldi | ale@graphicslab.org
 <!---
 So, we still don't have a pipe to work with. It's seomething we still have to create, that we have to invent. And the biggest issue: how can we create something as simple simple as the unix pipe, but get it to pipe rich content in a way that it is easy to manage for both the "sender" and the "receiver".
 
-- by the way, the pipe is the first memory i have of the lgm (picture of kiberpipa): a t-shirt i've met at the hostel in lyon and that i've found amazing! but i still haven't managed to buy one...
 -->

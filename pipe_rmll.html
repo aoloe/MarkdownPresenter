@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Markdown Presenter</title>
+<title>Piping Graphics Apps Together</title>
 <style>
   html, body {
   	margin:0;
@@ -22,10 +22,13 @@
 
   /* My styling here */
   body {
+    background-image: url(image/grass_bg.png);
+    /*
     background: #223;
     background: -webkit-gradient(linear, left top, left bottom, from(#334), to(#112));
     background: -moz-linear-gradient(top,  #334,  #112);
     text-shadow: #000 0 -2px 0;
+    */
   }
   .bg {
     background-image: url(bg.jpg);
@@ -40,9 +43,13 @@
    code {
        color: rgb(235, 174, 108);
   }
+  img {
+    min-width:100%;
+    max-height:600px;
+  }
  /* End styling */
 </style>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="showdown.js"></script>
 </head>
 <body>
@@ -84,7 +91,7 @@ Present.prevSlide = function() {
 
 Present.reload = function() {
     $.ajax({
-        url: 'presentation.md',
+        url: 'pipe_rmll.md',
         success: function(data) {
             if (data.length>0) {
                 converter = new Showdown.converter();
